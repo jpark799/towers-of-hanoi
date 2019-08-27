@@ -2,6 +2,23 @@
 let towers = [[3, 2, 1], [], []];
 let count = 0;
 
+moveTowers = (start, end) => {
+  const startPeg = start - 1
+  const endPeg = end - 1
+  const emptyEndPeg = towers[endPeg].length === 0 
+  const notEmptyStartPeg = towers[startPeg].length !== 0 
+  const lastItemInStartArray = towers[startPeg][towers[startPeg].length - 1]
+  const lastItemInEndArray = towers[endPeg][towers[endPeg].length-1]
+  if (lastItemInStartArray < lastItemInEndArray || emptyEndPeg && notEmptyStartPeg) {
+    towers[endPeg].push(lastItemInStartArray);
+    towers[startPeg].pop();
+    count++;
+  } else {
+    console.log("Move is not legal.");
+  }
+  console.log(towers)
+  console.log(`Move Count: `, count)
+}
 
 
 //   var moveTowers = function(start,end) {
