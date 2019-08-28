@@ -20,6 +20,11 @@ moveTowers = (start, end) => {
   console.log(`Move Count: `, count)
 }
 
+printBoard => {
+  const pegs = '---'
+  
+}
+
 checkWinner => {
   if (towers = [[], [3, 2, 1],[]] || [[], [], [3, 2, 1]]) {
     console.log('Congratulations! You won!')
