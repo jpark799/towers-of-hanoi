@@ -27,6 +27,11 @@ checkWinner = () => {
   }
 }
 
+resetBoard = () => {
+  console.log('resetting board....')
+  towers = [[3, 2, 1,], [], []]
+}
+
 //   var moveTowers = function(start,end) {
 //     var startPeg = start - 1; // so user doesn't have to ask for 0 when they mean 1
 //     var endPeg = end - 1;     // so user doesn't have to ask for 0 when they mean 1
