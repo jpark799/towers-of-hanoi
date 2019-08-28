@@ -20,6 +20,12 @@ moveTowers = (start, end) => {
   console.log(`Move Count: `, count)
 }
 
+checkWinner = () => {
+  if (towers = [[], [3, 2, 1],[]] || [[], [], [3, 2, 1]]) {
+    console.log('Congratulations! You won!')
+
+  }
+}
 
 //   var moveTowers = function(start,end) {
 //     var startPeg = start - 1; // so user doesn't have to ask for 0 when they mean 1
