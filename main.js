@@ -20,14 +20,14 @@ moveTowers = (start, end) => {
   console.log(`Move Count: `, count)
 }
 
-checkWinner = () => {
+checkWinner => {
   if (towers = [[], [3, 2, 1],[]] || [[], [], [3, 2, 1]]) {
     console.log('Congratulations! You won!')
     resetBoard()
   }
 }
 
-resetBoard = () => {
+resetBoard => {
   console.log('resetting board....')
   towers = [[3, 2, 1,], [], []]
 }
