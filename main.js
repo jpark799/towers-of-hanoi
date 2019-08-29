@@ -20,7 +20,7 @@ moveTowers = (start, end) => {
   checkWinner()
 }
 
-printBoard => {
+printBoard = () => {
   const pegs = '---'
   const pegsArrayMap = towers.map(x => pegs + x);
   pegsArrayMap.forEach(function(peg) {
@@ -29,7 +29,8 @@ printBoard => {
   moveCounter()
 }
 
-checkWinner => {
+// WIP: This function is always getting called. Look into conditional statement
+checkWinner = () => {
   if (towers = [[], [3, 2, 1],[]] || [[], [], [3, 2, 1]]) {
     console.log('Congratulations, you won! It took you ', count, ' total moves.')
     resetBoard()
@@ -37,11 +38,11 @@ checkWinner => {
 }
 
 // It felt cleaner to make a function that prints the move count rather than console logging it every time
-moveCounter => {
+moveCounter = () => {
   console.log(`Move Count: `, count)
 }
 
-resetBoard => {
+resetBoard = () => {
   console.log('resetting board....')
   towers = [[3, 2, 1,], [], []]
   count = 0
