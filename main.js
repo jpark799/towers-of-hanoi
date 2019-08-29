@@ -17,6 +17,7 @@ moveTowers = (start, end) => {
     console.log("Move is not legal.");
   }
   printBoard()
+  checkWinner()
 }
 
 printBoard => {
