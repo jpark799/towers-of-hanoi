@@ -25,7 +25,7 @@ printBoard => {
   pegsArrayMap.forEach(function(peg) {
     console.log(peg);
   }); 
-  console.log(`Move Count: `, count)
+  moveCounter()
 }
 
 checkWinner => {
@@ -33,6 +33,11 @@ checkWinner => {
     console.log('Congratulations! You won!')
     resetBoard()
   }
+}
+
+// It felt cleaner to make a function that prints the move count rather than console logging it every time
+moveCounter => {
+  console.log(`Move Count: `, count)
 }
 
 resetBoard => {
