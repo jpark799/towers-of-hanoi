@@ -22,7 +22,10 @@ moveTowers = (start, end) => {
 
 printBoard => {
   const pegs = '---'
-  
+  const pegsArrayMap = towers.map(x => pegs + x);
+  pegsArrayMap.forEach(function(peg) {
+    console.log(peg);
+  }); 
 }
 
 checkWinner => {
