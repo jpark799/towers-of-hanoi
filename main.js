@@ -38,6 +38,7 @@ checkWinner => {
 resetBoard => {
   console.log('resetting board....')
   towers = [[3, 2, 1,], [], []]
+  count = 0
 }
 
 //   var moveTowers = function(start,end) {
