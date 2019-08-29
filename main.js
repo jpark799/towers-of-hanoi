@@ -30,7 +30,7 @@ printBoard => {
 
 checkWinner => {
   if (towers = [[], [3, 2, 1],[]] || [[], [], [3, 2, 1]]) {
-    console.log('Congratulations! You won!')
+    console.log('Congratulations, you won! It took you ', count, ' total moves.')
     resetBoard()
   }
 }
