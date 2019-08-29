@@ -17,7 +17,6 @@ moveTowers = (start, end) => {
     console.log("Move is not legal.");
   }
   printBoard()
-  console.log(`Move Count: `, count)
 }
 
 printBoard => {
@@ -26,6 +25,7 @@ printBoard => {
   pegsArrayMap.forEach(function(peg) {
     console.log(peg);
   }); 
+  console.log(`Move Count: `, count)
 }
 
 checkWinner => {
