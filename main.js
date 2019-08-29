@@ -16,7 +16,7 @@ moveTowers = (start, end) => {
   } else {
     console.log("Move is not legal.");
   }
-  console.log(towers)
+  printBoard()
   console.log(`Move Count: `, count)
 }
 
