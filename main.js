@@ -32,7 +32,7 @@ printBoard = () => {
 }
 
 checkWinner = () => {
-  if ((towers === [[], [3, 2, 1],[]]) || (towers === [[], [], [3, 2, 1]])) {
+  if ((towers[1].length === 3) || (towers[2].length === 3)) {
     console.log('Congratulations, you won! It took you ', count, ' total moves.')
     resetBoard()
   }
@@ -51,10 +51,10 @@ resetBoard = () => {
 
 
 // uncomment for winning combination
-// moveTowers(1,2);
-// moveTowers(1,3);
-// moveTowers(2,3);
-// moveTowers(1,2);
-// moveTowers(3,1);
-// moveTowers(3,2);
-// moveTowers(1,2);
+moveTowers(1,2);
+moveTowers(1,3);
+moveTowers(2,3);
+moveTowers(1,2);
+moveTowers(3,1);
+moveTowers(3,2);
+moveTowers(1,2);
