@@ -22,10 +22,12 @@ moveTowers = (start, end) => {
 
 printBoard = () => {
   const pegs = '---'
-  const pegsArrayMap = towers.map(x => pegs + x);
+  let i = 1
+  const pegsArrayMap = towers.map(x => i++ + ' ' + pegs + ' ' + x);
   pegsArrayMap.forEach(function(peg) {
     console.log(peg);
   }); 
+  i = 1
   moveCounter()
 }
 
@@ -47,6 +49,8 @@ resetBoard = () => {
   count = 0
 }
 
+
+// uncomment for winning combination
 // moveTowers(1,2);
 // moveTowers(1,3);
 // moveTowers(2,3);
