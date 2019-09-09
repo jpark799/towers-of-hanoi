@@ -46,14 +46,14 @@ printBoard = () => {
 
 checkWinner = () => {
   if ((towers[1].length === 3) || (towers[2].length === 3)) {
-    console.log('Congratulations, you won! It took you ', count, ' total moves.')
+    console.log(`Congratulations, you won! It took you ${count} total moves.`)
     resetBoard()
   }
 }
 
 // It felt cleaner to make a function that prints the move count rather than console logging it every time
 moveCounter = () => {
-  console.log(`Move Count: `, count)
+  console.log(`Move Count: ${count}`)
 }
 
 resetBoard = () => {
