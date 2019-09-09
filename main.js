@@ -3,6 +3,12 @@ let towers = [[3, 2, 1], [], []];
 let count = 0;
 
 moveTowers = (start, end) => {
+  isOpenSpaceToMove(start, end)
+  printBoard()
+  checkWinner()
+}
+
+isOpenSpaceToMove = (start, end) => {
   const startPeg = start - 1
   const endPeg = end - 1
   const emptyEndPeg = towers[endPeg].length === 0 
@@ -16,8 +22,6 @@ moveTowers = (start, end) => {
   } else {
     console.log("Move is not legal.");
   }
-  printBoard()
-  checkWinner()
 }
 
 printBoard = () => {
