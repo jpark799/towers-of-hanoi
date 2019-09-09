@@ -44,7 +44,7 @@ moveCounter = () => {
 }
 
 resetBoard = () => {
-  console.log('resetting board....')
+  console.log('Resetting board...')
   towers = [[3, 2, 1,], [], []]
   count = 0
 }
