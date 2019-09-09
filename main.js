@@ -51,10 +51,10 @@ resetBoard = () => {
 
 
 // uncomment for winning combination
-moveTowers(1,2);
-moveTowers(1,3);
-moveTowers(2,3);
-moveTowers(1,2);
-moveTowers(3,1);
-moveTowers(3,2);
-moveTowers(1,2);
+// moveTowers(1,2);
+// moveTowers(1,3);
+// moveTowers(2,3);
+// moveTowers(1,2);
+// moveTowers(3,1);
+// moveTowers(3,2);
+// moveTowers(1,2);
