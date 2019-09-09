@@ -46,7 +46,6 @@ printBoard = () => {
   pegsArrayMap.forEach(function(peg) {
     console.log(peg);
   }); 
-  i = 1
   moveCounter()
 }
 
