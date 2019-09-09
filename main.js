@@ -12,9 +12,8 @@ isValidMove = (start, end) => {
   const startPeg = start - 1
   const endPeg = end - 1
   const lastItemInStartArray = towers[startPeg][towers[startPeg].length - 1]
-  if (lastItemInStartArraySmallerThanLastItemInEndArray(startPeg, endPeg)|| moveToEmptyPegCheck(startPeg, endPeg)) {
-    towers[endPeg].push(lastItemInStartArray);
-    towers[startPeg].pop();
+  if (lastItemInStartArraySmallerThanLastItemInEndArrayCheck(startPeg, endPeg)|| moveToEmptyPegCheck(startPeg, endPeg)) {
+    towers[endPeg].push(towers[startPeg].pop());
     count++;
   } else {
     console.log("Move is not legal.");
