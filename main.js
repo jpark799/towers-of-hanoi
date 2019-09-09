@@ -3,12 +3,12 @@ let towers = [[3, 2, 1], [], []];
 let count = 0;
 
 moveTowers = (start, end) => {
-  isOpenSpaceToMove(start, end)
+  isValidMove(start, end)
   printBoard()
   checkWinner()
 }
 
-isOpenSpaceToMove = (start, end) => {
+isValidMove = (start, end) => {
   const startPeg = start - 1
   const endPeg = end - 1
   const lastItemInStartArray = towers[startPeg][towers[startPeg].length - 1]
