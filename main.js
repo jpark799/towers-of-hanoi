@@ -40,12 +40,7 @@ lastItemInStartArraySmallerThanLastItemInEndArrayCheck = (startPeg, endPeg) => {
 }
 
 printBoard = () => {
-  const pegs = '---'
-  let i = 1
-  const pegsArrayMap = towers.map(x => i++ + ' ' + pegs + ' ' + x);
-  pegsArrayMap.forEach(function(peg) {
-    console.log(peg);
-  }); 
+  towers.map((element, index) => console.log(`${++index} --- ${element}`))
   moveCounter()
 }
 
