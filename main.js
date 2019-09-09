@@ -15,13 +15,24 @@ isOpenSpaceToMove = (start, end) => {
   const notEmptyStartPeg = towers[startPeg].length !== 0 
   const lastItemInStartArray = towers[startPeg][towers[startPeg].length - 1]
   const lastItemInEndArray = towers[endPeg][towers[endPeg].length-1]
-  if (lastItemInStartArray < lastItemInEndArray || emptyEndPeg && notEmptyStartPeg) {
+  if (lastItemInStartArray < lastItemInEndArray || moveToEmptyPegCheck(start,end)) {
     towers[endPeg].push(lastItemInStartArray);
     towers[startPeg].pop();
     count++;
   } else {
     console.log("Move is not legal.");
   }
+}
+
+moveToEmptyPegCheck = (start, end) => {
+  const startPeg = start - 1
+  const endPeg = end - 1
+  const emptyEndPeg = towers[endPeg].length === 0 
+  const notEmptyStartPeg = towers[startPeg].length !== 0 
+  if (emptyEndPeg && notEmptyStartPeg) {
+    return true  
+  } else 
+    return false
 }
 
 printBoard = () => {
